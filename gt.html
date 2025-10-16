@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Examples</title>
+</head>
+<body>
+  <h2>JavaScript Function Examples</h2>
+
+  <script>
+   
+    function add(a, b) {
+      console.log("Sum:", a + b);
+    }
+
+ 
+    const multiply = function(a, b) {
+      console.log("Product:", a * b);
+    };
+
+   
+    const subtract = (a, b) => {
+      console.log("Difference:", a - b);
+    };
+
+    
+    function divide(a, b) {
+      return a / b;
+    }
+
+    
+    let globalVar = "I am global"; 
+
+    function scopeExample() {
+      let localVar = "I am local"; 
+      console.log(globalVar);
+      console.log(localVar);  
+    }
+
+   
+    add(10, 5);
+    multiply(10, 5);
+    subtract(10, 5);
+
+    let result = divide(20, 5);
+    console.log("Quotient:", result);
+
+    scopeExample();
+
+    console.log(globalVar);
+    
+  </script>
+</body>
+</html>
